@@ -15,6 +15,7 @@ body {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 #board img {
@@ -36,4 +37,15 @@ button {
 button:disabled {
     background-color: #ccc;
     cursor: not-allowed;
+}
+
+#ton-connect {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#payButton {
+    display: block;
+    margin: 20px auto;
 }
