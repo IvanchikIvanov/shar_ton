@@ -45,6 +45,13 @@ button:disabled {
     align-items: center;
     margin: 20px auto;
     width: 100%;
+    flex-direction: column; /* Добавим для центрирования кнопки по вертикали */
+}
+
+#ton-connect .tonconnect-button {
+    display: flex;
+    justify-content: center;
+    width: auto;
 }
 
 #payButton {
