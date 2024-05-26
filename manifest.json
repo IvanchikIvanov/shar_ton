@@ -1,7 +1,6 @@
 {
-  "manifest_url": "https://IvanchikIvanov.github.io/shar_ton/tonconnect-manifest.json",
-  "name": "Candy Crush Game",
-  "description": "Play Candy Crush and pay with TON",
-  "icon_url": "https://IvanchikIvanov.github.io/shar_ton/lollipop.png",
-  "url": "https://ivanchikivanov.github.io/shar_ton/"
+    "url": "https://ivanchikivanov.github.io/shar_ton/",
+    "name": "Candy Crush Game",
+    "icon_url": "https://IvanchikIvanov.github.io/shar_ton/lollipop.png"
+ 
 }
