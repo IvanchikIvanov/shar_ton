@@ -1,4 +1,4 @@
-body{
+body {
     background: url("./background.jpg") no-repeat center center fixed;
     background-size: cover;
     font-family: Arial;
@@ -6,7 +6,7 @@ body{
     text-align: center;
 }
 
-#board{
+#board {
     width: 450px;
     height: 450px;
     background-color: lightblue;
@@ -15,10 +15,39 @@ body{
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+    margin-top: 20px;
 }
 
-#board img{
+#board img {
     width: 50px;
     height: 50px;
-    
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#ton-connect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    width: 100%;
+}
+
+#payButton {
+    display: block;
+    margin: 20px auto;
 }
