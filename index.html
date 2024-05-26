@@ -4,50 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./candy.css">
-    <script src="https://unpkg.com/@tonconnect/ui@latest/dist/tonconnect-ui.min.js"></script>
-    <script src="./candy.js" defer></script>
+    <script src="./candy.js"></script>
     <title>Candy Crush</title>
 </head>
 <body>
     <h1>Score: <span id="score">0</span></h1>
     <div id="board"></div>
-    <div id="ton-connect"></div>
-    <button id="payButton" disabled>Pay with TON</button>
-    <script>
-        const tonConnectUI = new TON_CONNECT_UI.TonConnectUI({
-            manifestUrl: 'https://IvanchikIvanov.github.io/shar_ton/manifest.json',
-            buttonRootId: 'ton-connect'
-        });
-
-        async function connectToWallet() {
-            try {
-                const connectedWallet = await tonConnectUI.connectWallet();
-                console.log(connectedWallet);
-                document.getElementById('payButton').disabled = false;
-            } catch (error) {
-                console.error("Error connecting to wallet:", error);
-            }
-        }
-
-        document.getElementById('payButton').addEventListener('click', async () => {
-            const transaction = {
-                messages: [
-                    {
-                        address: "UQCnZkgWwyit_7PDfDWM33CQBxewjgjBXGhWmYtJ3sgOQz8e", // Replace with your TON address
-                        amount: "20000000" // Amount in nanotons (0.02 TON)
-                    }
-                ]
-            };
-
-            try {
-                const result = await tonConnectUI.sendTransaction(transaction);
-                console.log('Transaction result:', result);
-                alert('Transaction successful!');
-            } catch (error) {
-                console.error('Transaction failed:', error);
-                alert('Transaction failed.');
-            }
-        });
-    </script>
 </body>
 </html>
